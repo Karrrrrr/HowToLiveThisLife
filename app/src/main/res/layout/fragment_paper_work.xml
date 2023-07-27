@@ -1,0 +1,664 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F3F3F3"
+    tools:context=".HomeProblems">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#B1DB68"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:fontFamily="sans-serif-black"
+            android:text="емы"
+            android:onClick="house"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:layout_marginLeft="80dp"
+            android:fontFamily="sans-serif-black"
+            android:text="Бумажные дела"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginVertical="10dp"
+            android:layout_marginLeft="95dp"
+            android:fontFamily="sans-serif-black"
+            android:onClick="stateRight"
+            android:text="Гос"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@drawable/borders"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:onClick="hcs"
+                android:background="#D4EDA8">
+
+                <ImageView
+                    android:layout_width="13dp"
+                    android:layout_height="13dp"
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/hcsPlus"
+                    android:background="@drawable/plus"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ЖКХ"
+                    android:fontFamily="sans-serif-black"
+                    android:textSize="17dp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#6A6A6A"/>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@drawable/borders"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="vertical"
+                android:id="@+id/hcsLayout"
+                android:visibility="invisible">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:layout_marginTop="10dp"
+                    android:onClick="article"
+                    android:layout_marginHorizontal="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Оплата счетов"
+                        android:fontFamily="sans-serif-black"
+                        android:textSize="17dp"
+                        android:layout_marginLeft="20dp"
+                        android:textColor="#6A6A6A"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="За что нужно платить и как дорого это вам обойдётся."
+                        android:fontFamily="sans-serif"
+                        android:textSize="15dp"
+                        android:layout_marginHorizontal="40dp"
+                        android:textColor="#6A6A6A"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:layout_marginTop="10dp"
+                    android:onClick="article"
+                    android:layout_marginHorizontal="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Показания счётчиков"
+                        android:fontFamily="sans-serif-black"
+                        android:textSize="17dp"
+                        android:layout_marginLeft="20dp"
+                        android:textColor="#6A6A6A"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Что значат циферки на счётчиках, кому и зачем они нужны."
+                        android:fontFamily="sans-serif"
+                        android:textSize="15dp"
+                        android:layout_marginHorizontal="40dp"
+                        android:textColor="#6A6A6A"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:layout_marginTop="10dp"
+                    android:onClick="article"
+                    android:layout_marginHorizontal="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="К вам пришли из ЖКХ"
+                        android:fontFamily="sans-serif-black"
+                        android:textSize="17dp"
+                        android:layout_marginLeft="20dp"
+                        android:textColor="#6A6A6A"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Почему стоит открывать незнакомым людям и что им сказать."
+                        android:fontFamily="sans-serif"
+                        android:textSize="15dp"
+                        android:layout_marginHorizontal="40dp"
+                        android:textColor="#6A6A6A"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:layout_marginVertical="10dp"
+                    android:onClick="article"
+                    android:layout_marginHorizontal="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Налог на недвижимость"
+                        android:fontFamily="sans-serif-black"
+                        android:textSize="17dp"
+                        android:layout_marginLeft="20dp"
+                        android:textColor="#6A6A6A"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Вам в почтоый ящик положили письмо из налоговой? Поможем разобраться."
+                        android:fontFamily="sans-serif"
+                        android:textSize="15dp"
+                        android:layout_marginHorizontal="40dp"
+                        android:textColor="#6A6A6A"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:onClick="passport"
+                android:background="#D4EDA8">
+
+                <ImageView
+                    android:layout_width="13dp"
+                    android:layout_height="13dp"
+                    android:layout_marginVertical="5dp"
+                    android:id="@+id/passportPlus"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/plus"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Паспорт, СНИЛС и прочее"
+                    android:fontFamily="sans-serif-black"
+                    android:textSize="17dp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#6A6A6A"/>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@drawable/borders"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:id="@+id/passportLayout"
+                android:visibility="invisible"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:layout_marginTop="10dp"
+                    android:onClick="article"
+                    android:layout_marginHorizontal="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Паспорт"
+                        android:fontFamily="sans-serif-black"
+                        android:textSize="17dp"
+                        android:layout_marginLeft="20dp"
+                        android:textColor="#6A6A6A"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Как получить, что в нём написано, где находятся серия и номер."
+                        android:fontFamily="sans-serif"
+                        android:textSize="15dp"
+                        android:layout_marginHorizontal="40dp"
+                        android:textColor="#6A6A6A"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:layout_marginTop="10dp"
+                    android:onClick="article"
+                    android:layout_marginHorizontal="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="СНИЛС"
+                        android:fontFamily="sans-serif-black"
+                        android:textSize="17dp"
+                        android:layout_marginLeft="20dp"
+                        android:textColor="#6A6A6A"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Что значит этот документ, где его взять и зачем он нужен."
+                        android:fontFamily="sans-serif"
+                        android:textSize="15dp"
+                        android:layout_marginHorizontal="40dp"
+                        android:textColor="#6A6A6A"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:layout_marginTop="10dp"
+                    android:onClick="article"
+                    android:layout_marginHorizontal="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ИНН"
+                        android:fontFamily="sans-serif-black"
+                        android:textSize="17dp"
+                        android:layout_marginLeft="20dp"
+                        android:textColor="#6A6A6A"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Думаете, если не платить налоги, то никто не узнает? Как бы не так."
+                        android:fontFamily="sans-serif"
+                        android:textSize="15dp"
+                        android:layout_marginHorizontal="40dp"
+                        android:textColor="#6A6A6A"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:layout_marginVertical="10dp"
+                    android:onClick="article"
+                    android:layout_marginHorizontal="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Загран паспорт"
+                        android:fontFamily="sans-serif-black"
+                        android:textSize="17dp"
+                        android:layout_marginLeft="20dp"
+                        android:textColor="#6A6A6A"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Какие документы нужны, чтобы уехать из страны."
+                        android:fontFamily="sans-serif"
+                        android:textSize="15dp"
+                        android:layout_marginHorizontal="40dp"
+                        android:textColor="#6A6A6A"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:onClick="dl"
+                android:background="#D4EDA8">
+
+                <ImageView
+                    android:layout_width="13dp"
+                    android:layout_height="13dp"
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/dlPlus"
+                    android:background="@drawable/plus"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Права"
+                    android:fontFamily="sans-serif-black"
+                    android:textSize="17dp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#6A6A6A"/>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@drawable/borders"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:visibility="invisible"
+                android:id="@+id/dlLayout"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:layout_marginTop="10dp"
+                    android:onClick="article"
+                    android:layout_marginHorizontal="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Документы на автомобиль"
+                        android:fontFamily="sans-serif-black"
+                        android:textSize="17dp"
+                        android:layout_marginLeft="20dp"
+                        android:textColor="#6A6A6A"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Какие бумажки стоит возить с собой, а какие можно оставить дома."
+                        android:fontFamily="sans-serif"
+                        android:textSize="15dp"
+                        android:layout_marginHorizontal="40dp"
+                        android:textColor="#6A6A6A"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:layout_marginTop="10dp"
+                    android:onClick="article"
+                    android:layout_marginHorizontal="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Правила купли-продажи автомобиля"
+                        android:fontFamily="sans-serif-black"
+                        android:textSize="17dp"
+                        android:layout_marginLeft="20dp"
+                        android:textColor="#6A6A6A"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Расскажем, как не попасть на деньги при покупке/продаже автомобиля."
+                        android:fontFamily="sans-serif"
+                        android:textSize="15dp"
+                        android:layout_marginHorizontal="40dp"
+                        android:textColor="#6A6A6A"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:layout_marginTop="10dp"
+                    android:onClick="article"
+                    android:layout_marginHorizontal="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Что показать ГАИшнику"
+                        android:fontFamily="sans-serif-black"
+                        android:textSize="17dp"
+                        android:layout_marginLeft="20dp"
+                        android:textColor="#6A6A6A"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Почему им постоянно надо что-то показывать и что показывать не стоит."
+                        android:fontFamily="sans-serif"
+                        android:textSize="15dp"
+                        android:layout_marginHorizontal="40dp"
+                        android:textColor="#6A6A6A"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:layout_marginVertical="10dp"
+                    android:onClick="article"
+                    android:layout_marginHorizontal="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Каршеринг"
+                        android:fontFamily="sans-serif-black"
+                        android:textSize="17dp"
+                        android:layout_marginLeft="20dp"
+                        android:textColor="#6A6A6A"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Новомодные автомобили в аренду. С чем это едят?"
+                        android:fontFamily="sans-serif"
+                        android:textSize="15dp"
+                        android:layout_marginHorizontal="40dp"
+                        android:textColor="#6A6A6A"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:onClick="md"
+                android:background="#D4EDA8">
+
+                <ImageView
+                    android:layout_width="13dp"
+                    android:layout_height="13dp"
+                    android:layout_marginVertical="5dp"
+                    android:id="@+id/mdPlus"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/plus"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Медицинские документы"
+                    android:fontFamily="sans-serif-black"
+                    android:textSize="17dp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#6A6A6A"/>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@drawable/borders"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:visibility="invisible"
+                android:id="@+id/mdLayout"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:layout_marginTop="10dp"
+                    android:onClick="article"
+                    android:layout_marginHorizontal="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Как прикрепиться к взрослой поликлинике"
+                        android:fontFamily="sans-serif-black"
+                        android:textSize="17dp"
+                        android:layout_marginLeft="20dp"
+                        android:textColor="#6A6A6A"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Почему нельзя всю жизнь ходить в детскую поликлинику?"
+                        android:fontFamily="sans-serif"
+                        android:textSize="15dp"
+                        android:layout_marginHorizontal="40dp"
+                        android:textColor="#6A6A6A"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:layout_marginTop="10dp"
+                    android:onClick="article"
+                    android:layout_marginHorizontal="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Карточка"
+                        android:fontFamily="sans-serif-black"
+                        android:textSize="17dp"
+                        android:layout_marginLeft="20dp"
+                        android:textColor="#6A6A6A"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Как выкрасть этот секретный документ из лап коварной регистратуры."
+                        android:fontFamily="sans-serif"
+                        android:textSize="15dp"
+                        android:layout_marginHorizontal="40dp"
+                        android:textColor="#6A6A6A"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:layout_marginTop="10dp"
+                    android:onClick="article"
+                    android:layout_marginHorizontal="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Полис медицинского страхования"
+                        android:fontFamily="sans-serif-black"
+                        android:textSize="17dp"
+                        android:layout_marginLeft="20dp"
+                        android:textColor="#6A6A6A"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Зачем оно надо и почему без него не приедет даже скорая."
+                        android:fontFamily="sans-serif"
+                        android:textSize="15dp"
+                        android:layout_marginHorizontal="40dp"
+                        android:textColor="#6A6A6A"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:layout_marginVertical="10dp"
+                    android:onClick="article"
+                    android:layout_marginHorizontal="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Рецепты врачей"
+                        android:fontFamily="sans-serif-black"
+                        android:textSize="17dp"
+                        android:layout_marginLeft="20dp"
+                        android:textColor="#6A6A6A"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Нет, здесь не будет информации, как их читать, их никто не может прочитать."
+                        android:fontFamily="sans-serif"
+                        android:textSize="15dp"
+                        android:layout_marginHorizontal="40dp"
+                        android:textColor="#6A6A6A"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
